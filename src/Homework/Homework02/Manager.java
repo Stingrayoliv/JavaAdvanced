@@ -25,5 +25,4 @@ public class Manager extends Employee {
 //    public void pay(double bonus) {
 //       super.pay(managerBonus);
 //    }
-
 }

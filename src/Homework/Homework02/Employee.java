@@ -20,7 +20,6 @@ public class Employee {
         this.bonusStatus = bonusStatus;
     }
 
-
     public boolean getBonusStatus() {
         return bonusStatus;
     }
@@ -29,15 +28,12 @@ public class Employee {
         System.out.println("I am Java programmer. I write Java program");
     }
 
-    //
+    //Перегрузка (параметрический полиморфизм)
     public void pay() {
-        System.out.println(name + " " + surname + "earned: "+salary+" EUR");
+        System.out.println(name + " " + surname + "earned: " + salary + " EUR");
     }
 
     public void pay(double bonus) {
-        System.out.println(name + " " + surname + "earned salary with bonus: "+(salary+bonus)+" EUR");
+        System.out.println(name + " " + surname + "earned salary with bonus: " + (salary + bonus) + " EUR");
     }
-
-
-
 }

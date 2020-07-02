@@ -17,6 +17,4 @@ public class CProgrammer extends Employee {
     public void codeReview() { //доступен только программистам
         System.out.println("This C code is good.");
     }
-
-
 }

@@ -11,31 +11,31 @@ public class Main {
         CProgrammer p1 = new CProgrammer("Roman", "Rodmanod", 676, 3000, false);
         JavaProgrammer p2 = new JavaProgrammer("Juli", "Oscar", 556, 3000.0,
                 false);
-        JavaScriptProgrammer p3 = new JavaScriptProgrammer("Anna",  "Loran", 678, 5567.0,
+        JavaScriptProgrammer p3 = new JavaScriptProgrammer("Anna", "Loran", 678, 5567.0,
                 false);
         Manager manager1 = new Manager("Sofie", "Norman", 1234, 987.0, true,
-                77);
+                100);
 
         Employee[] workers = new Employee[]{
                 p1,
                 p2,
                 p3,
                 manager1,
-                new Manager("Andrey", "Rod", 453, 4537.0, true, 77)
+                new Manager("Andrey", "Rod", 453, 4537.0, true, 100)
         };
 
 
         System.out.println("//----//----//----//----//----//----//----//----//");
-        for (Employee employee: workers) {
+        for (Employee employee : workers) {
             if (employee.getBonusStatus() == true) {
-                employee.pay(77);
+                employee.pay(100);
             } else {
                 employee.pay();
             }
         }
 
         System.out.println("//----//----//----//----//----//----//----//----//");
-        for (Employee employee: workers) {
+        for (Employee employee : workers) {
             employee.work();
         }
     }

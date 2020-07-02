@@ -1,5 +1,4 @@
 package Homework.Homework02;
-
 /**
  * JavaAdvanced
  * 01.07.20 18: 10
