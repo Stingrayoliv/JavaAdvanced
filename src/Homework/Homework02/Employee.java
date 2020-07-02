@@ -28,7 +28,7 @@ public class Employee {
         System.out.println("I am Java programmer. I write Java program");
     }
 
-    //Перегрузка (параметрический полиморфизм)
+    //перегрузка (параметрический полиморфизм)
     public void pay() {
         System.out.println(name + " " + surname + "earned: " + salary + " EUR");
     }

@@ -2,7 +2,7 @@ package Homework.Homework02;
 
 /**
  * JavaAdvanced
- * 01.07.20 17: 58
+ * 01.07.20 17: 57
  */
 public class Manager extends Employee {
     private double managerBonus;

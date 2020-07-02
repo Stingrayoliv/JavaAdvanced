@@ -5,6 +5,7 @@ package Homework.Homework02;
  * 01.07.20 22: 30
  */
 public class JavaProgrammer extends Employee {
+
     public JavaProgrammer(String name, String surname, int ID, double salary, boolean bonusStatus) {
         super(name, surname, ID, salary, bonusStatus);
     }
