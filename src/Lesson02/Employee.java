@@ -1,4 +1,4 @@
-package AnvancedLesson02;
+package Lesson02;
 
 /**
  * JavaAdvanced

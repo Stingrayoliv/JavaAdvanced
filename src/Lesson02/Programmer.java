@@ -1,4 +1,4 @@
-package AnvancedLesson02;
+package Lesson02;
 
 /**
  * JavaAdvanced
@@ -10,5 +10,8 @@ public class Programmer extends Employee { // extends - наследование
     }
     public void work() {
         System.out.println("programmer: I am writing code ");
+    }
+
+    public void codeReview() {
     }
 }
