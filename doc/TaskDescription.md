@@ -1,4 +1,5 @@
-14_1
+# polymorphism and inheritance
+
 1. В проекте Employee реализовать несколько классов : CProgrammer, JavaProgrammer,
 JavaScriptProgrammer.
 2. В каждом классе переопределить метод work(). Пусть он в каждом случае выводит

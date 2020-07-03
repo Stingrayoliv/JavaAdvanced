@@ -11,6 +11,7 @@ public class CProgrammer extends Employee {
 
     @Override
     public void work() { // полиморфизм переопределение (override)
+
         System.out.println("I am a C programmer. I write a C program");
     }
 

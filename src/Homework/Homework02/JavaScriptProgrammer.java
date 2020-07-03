@@ -5,7 +5,6 @@ package Homework.Homework02;
  */
 public class JavaScriptProgrammer extends Employee {
 
-
     public JavaScriptProgrammer(String name, String surname, int ID, double salary, boolean bonusStatus) {
         super(name, surname, ID, salary, bonusStatus);
     }
