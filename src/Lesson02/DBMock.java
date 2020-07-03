@@ -24,7 +24,7 @@ public class DBMock {
         return employees;
     }
 // как отобрать из массива Employee[] выбрать только программеров
-    public static Programmer[] getProgrammers() {
+    public static Programmer[] getProgrammers(Employee[] employees) {
         int counter = 0;
         for (Employee employee: employees) {
             if(isProgrammer(employee)){
