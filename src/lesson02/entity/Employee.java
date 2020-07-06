@@ -1,5 +1,4 @@
 package lesson02.entity;
-
 /**
  * JavaAdvanced
  * 30.06.20 19: 46
