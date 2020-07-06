@@ -1,10 +1,10 @@
-package Lesson02;
+package lesson02.entity;
 
 /**
  * JavaAdvanced
  * 30.06.20 19: 46
  */
-public class Employee {
+public abstract class Employee {
     private String name;
     private double salary;
 
@@ -37,6 +37,6 @@ public class Employee {
         return salary;
     }
 
-    public void work() { // пустой нужен, чтобы для всех Employee вызвать
-    }
+    public abstract void work(); // пустой нужен, чтобы для всех Employee вызвать (abstract -не нужно {})
+
 }

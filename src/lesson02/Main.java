@@ -1,4 +1,9 @@
-package Lesson02;
+package lesson02;
+
+import lesson02.entity.CPrgrammer;
+import lesson02.entity.Employee;
+import lesson02.entity.Manager;
+import lesson02.repository.DBMock;
 
 /**
  * JavaAdvanced
@@ -7,10 +12,31 @@ package Lesson02;
  */
 public class Main {
     public static void main(String[] args) {
+        EmployeeArray dep01 = new EmployeeArray(DBMock.getEmployees());
+        EmployeeArray dep02 = new EmployeeArray(
+                new Employee[]{
+                        new Manager("Sasha", 2000.0, 100),
+                        new CPrgrammer("Oleg", 3000)
+                }
+        );
+        System.out.println("-------------department 01");
+        dep01.payAll();
+        System.out.println("-------------department 02");
+        dep02.payAll();
+
+        EmployeeArray[] firm = {dep01, dep02};
+        for (EmployeeArray arr : firm) {
+            arr.workAll();
+        }
+
+
+        /* 2 вариант, если через static из ДЗ 3
         EmployeeArray.payAll(DBMock.getEmployees());
         EmployeeArray.workAll(DBMock.getEmployees());
         EmployeeArray.PrintAll(DBMock.getEmployees());
         EmployeeArray.CodeReviewAll(DBMock.getEmployees());
+
+         */
     }
 
 //        //  способы записи

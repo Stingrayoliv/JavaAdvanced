@@ -1,4 +1,4 @@
-package Lesson02;
+package lesson02.entity;
 
 /**
  * JavaAdvanced
@@ -7,6 +7,11 @@ package Lesson02;
 public class LazyEmployee extends Employee {
     public LazyEmployee(String name, double salary) {
         super(name, salary);
+    }
+
+    @Override
+    public void work() {
+
     }
 
 }

@@ -1,6 +1,4 @@
-package Homework.Homework02;
-
-import com.sun.tools.corba.se.idl.StructEntry;
+package homeworkAll.homework02;
 
 /**
  * JavaAdvanced

@@ -1,4 +1,6 @@
-package Lesson02;
+package lesson02.repository;
+
+import lesson02.entity.*;
 
 /**
  * JavaAdvanced

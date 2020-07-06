@@ -1,4 +1,4 @@
-package Lesson02;
+package lesson02.entity;
 
 /**
  * JavaAdvanced
@@ -15,5 +15,10 @@ public class Manager extends Employee {
     @Override
     public void pay() {
         System.out.println("pay for manager" + getSalary() + "bonus " + managerBonus + " euro for " + getName());
+    }
+
+    @Override
+    public void work() {
+        System.out.println("A good manager doesn't work");
     }
 }
