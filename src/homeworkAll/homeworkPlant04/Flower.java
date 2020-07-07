@@ -10,9 +10,4 @@ public class Flower extends Plant {
                   double winterGrowth) {
         super(name, initialGrowth, springGrowth, summerGrowth, autumnGrowth, winterGrowth);
     }
-//    @Override
-//    public void showYearGrowth() {
-//        System.out.println( getName()+ "flower growth is " +getInitialGrowth() + showSpringGrowth() + showSummerGrowth() +
-//                showAutumnGrowth() + showWinterGrowth() + "cm per year");
-//    }
 }

@@ -9,5 +9,4 @@ public class Bush extends Plant {
                 double winterGrowth) {
         super(name, initialGrowth, springGrowth, summerGrowth, autumnGrowth, winterGrowth);
     }
-
 }
