@@ -11,8 +11,7 @@ public class Circle extends Figure {
 
     @Override
     public void findFigureArea() {
-        final double PI = 3.14;
-        double area = 2 * PI * Math.pow(getRadius(), 2);
+        double area = Math.PI * Math.pow(getRadius(), 2);
         System.out.println("area circle: " + area + " cm");
     }
 }
