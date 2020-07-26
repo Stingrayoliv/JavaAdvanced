@@ -1,4 +1,4 @@
-package LessonPlant05;
+package lessonPlant05;
 
 /**
  * JavaAdvanced

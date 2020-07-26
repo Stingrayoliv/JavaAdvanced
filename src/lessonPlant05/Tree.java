@@ -1,12 +1,12 @@
-package LessonPlant05;
+package lessonPlant05;
 
-public class Bush extends Plant {
-    private int springGrowth = 10;
-    private int summerGrowth = 10;
-    private int autumnGrowth = 3;
-    private int winterGrowth = 0;
+public class Tree extends Plant {
+    private int springGrowth = 15;
+    private int summerGrowth = 15;
+    private int autumnGrowth = 5;
+    private int winterGrowth = 5;
 
-    public Bush(String name, int startGrowth) {
+    public Tree(String name, int startGrowth) {
         super(name, startGrowth);
     }
 
@@ -32,7 +32,8 @@ public class Bush extends Plant {
 
     @Override
     public String toString() {
-        return "Bush [" + getName() + "] growth: " + getGrowth()+"cm";
+        return "Tree [" + getName() + "] growth: " + getGrowth()+"cm";
     }
 
 }
+

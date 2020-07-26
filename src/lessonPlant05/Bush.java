@@ -1,19 +1,13 @@
-package LessonPlant05;
+package lessonPlant05;
 
-public class Flower extends Plant {
-    private int springGrowth = 20;
+public class Bush extends Plant {
+    private int springGrowth = 10;
     private int summerGrowth = 10;
-    private int autumnGrowth = 0;
+    private int autumnGrowth = 3;
     private int winterGrowth = 0;
 
-    public Flower(String name, int startGrowth) {
+    public Bush(String name, int startGrowth) {
         super(name, startGrowth);
-    }
-
-    @Override
-    protected void winter() {
-        setGrowth(0);
-        System.out.println("Winter: " + getName() + "is cut "+getGrowth()+"cm");
     }
 
     @Override
@@ -38,7 +32,7 @@ public class Flower extends Plant {
 
     @Override
     public String toString() {
-        return "Flower [" + getName() + "] growth: " + getGrowth()+"cm";
+        return "Bush [" + getName() + "] growth: " + getGrowth()+"cm";
     }
 
 }
