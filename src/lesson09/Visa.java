@@ -16,8 +16,9 @@ public class Visa extends Card {
                 ", number='" + getNumber() + '\'' +
                 '}';
     }
+
     @Override
-    public String toSecureString(){
+    public String toSecureString() {
         return "Visa{" +
                 "person=" + getPerson() +
                 ", number='" + getSecureNumber() + '\'' +
@@ -25,10 +26,10 @@ public class Visa extends Card {
     }
 
     private String getSecureNumber() {
-        String star ="";
-        for (int i = 0; i <getNumber().length()-6; i++) {
-            star +="*";
+        String star = "";
+        for (int i = 0; i < getNumber().length() - 6; i++) {
+            star += "*";
         }
-        return getNumber().substring(0,4)+star+getNumber().substring(getNumber().length()-2);
+        return getNumber().substring(0, 4) + star + getNumber().substring(getNumber().length() - 2);
     }
 }
