@@ -9,7 +9,7 @@ public class Person {
     private String surname;
     private String middleName;
 
-    public Person(String name, String surname, String middleName) {
+    public Person(String surname, String name, String middleName) {
         this.name = name;
         this.surname = surname;
         this.middleName = middleName;
@@ -26,13 +26,19 @@ public class Person {
 
     @Override
     public String toString() {
-        if (name == null && middleName == null) return "surname= " + surname;
-        if (middleName == null) return "surname= " + surname + "name= '" + name;
-        else return "Person{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", middleName='" + middleName + '\'' +
-                '}';
+        if (name == null && middleName == null) return "surname=" + surname;
+        if (middleName == null) return "surname=" + surname + " " + " name=" + " " + name;
+        else
+            return "surname=" + " " + surname + " " + "name=" + " " + name + " " + " middleName= " + middleName;
     }
 
+
+//    @Override
+//    public String toString() {
+//        return "Person{" +
+//                "name='" + name + '\'' +
+//                ", surname='" + surname + '\'' +
+//                ", middleName='" + middleName + '\'' +
+//                '}';
+//    }
 }

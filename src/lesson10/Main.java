@@ -1,5 +1,4 @@
 package lesson10;
-
 import java.util.Arrays;
 
 /**
@@ -13,14 +12,27 @@ public class Main {
     }
 
     public static Person[] showDataPerson(String[] array) {
-        Person[] persons = new Person[array.length];
-        for (int i = 0; i < array.length - 2; i++) {
-            String[] rez = array[i].split(" ");
-            persons[i] = new Person(rez[0], rez[1], rez[2]);
-            persons[i + 1] = new Person(rez[0], rez[1]);
-            persons[i + 2] = new Person(rez[0]);
-        }
+        Person[] persons = null;
 
+        if (array != null) {
+            persons = new Person[array.length];
+            for (int i = 0; i < array.length; i++) {
+                String[] names = array[i].split(" ");
+                switch (names.length) {
+                    case 1:
+                        persons[i] = new Person(names[0]);
+                        break;
+                    case 2:
+                        persons[i] = new Person(names[0], names[1]);
+                        break;
+                    case 3:
+                        persons[i] = new Person(names[0], names[1], names[2]);
+                }
+            }
+        }
         return persons;
     }
+
+
 }
+
