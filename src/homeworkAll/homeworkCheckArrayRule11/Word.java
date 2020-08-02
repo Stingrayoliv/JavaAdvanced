@@ -1,4 +1,4 @@
-package HomeworkWord11;
+package homeworkWord11;
 
 /**
  * JavaAdvanced
