@@ -1,8 +1,8 @@
-package Hotel;
+package homeworkAll.homeworkHotel;
 
 /**
  * JavaAdvanced
- * 31.07.20 19: 23
+ * 02.08.20 14: 08
  */
 public class Date {
     private int day;
@@ -18,5 +18,17 @@ public class Date {
     @Override
     public String toString() {
         return day + "-" + month + "-" + year;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public int getYear() {
+        return year;
     }
 }

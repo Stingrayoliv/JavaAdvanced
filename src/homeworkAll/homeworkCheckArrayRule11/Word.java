@@ -1,4 +1,4 @@
-package homeworkWord11;
+package homeworkAll.homeworkCheckArrayRule11;
 
 /**
  * JavaAdvanced
