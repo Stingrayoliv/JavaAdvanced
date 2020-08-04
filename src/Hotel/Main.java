@@ -9,7 +9,7 @@ public class Main {
         Booking b1 = new Booking(
                 new StandardRoom("1", 2),
                 new Person("Jack"),
-                new DateInterval(new Date(30, 7, 2020), new Date(10, 8, 2020))
+                new DateInterval(new Date(30, 7, 2019), new Date(30, 7, 2020))
         );
         Booking b2 = new Booking(
                 new SuiteRoom("3", 2),

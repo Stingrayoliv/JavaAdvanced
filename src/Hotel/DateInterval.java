@@ -26,12 +26,22 @@ public class DateInterval {
     }
 
     public int getDays() { //для расчета цены за все дни бронирования
-        int min = 1;
-        int max = 100;
-        if (days == 0) {//чтобы если второй раз генерилось, то просто возвращаем уже сгенеренное
-            // ( если 0, то не генерим второй раз)
-            days = min + rnd.nextInt(max - min + 1);
+        if (days == 0) {
+            for (int i = start.getYear(); i <finish.getYear() ; i++) {
+                days+=Date.getDaysPerYear(i);
+            }
+            days-=start.daysFromNewYear();
+            days+=finish.daysFromNewYear();
         }
+        //10.10.2016...03.08.2020  - пример для тестов
+
+
+//        int min = 1;
+//        int max = 100;
+//        if (days == 0) {//чтобы если второй раз генерилось, то просто возвращаем уже сгенеренное
+//            // ( если 0, то не генерим второй раз)
+//            days = min + rnd.nextInt(max - min + 1);
+//        }
         return days;
     }
 

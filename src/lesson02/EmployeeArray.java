@@ -1,7 +1,6 @@
 package lesson02;
 import lesson02.entity.Employee;
 import lesson02.entity.Programmer;
-
 /**
  * JavaAdvanced
  * 03.07.20 11: 28

@@ -1,5 +1,4 @@
 package homeworkAll.homeworkCheckArrayRule11;
-
 /**
  * JavaAdvanced
  * 31.07.20 13: 01
@@ -12,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, -1, 6, 3, 1, 4, 1, 2, 1, -7, 9, 5};//true
         System.out.println("Test №1 "+checkArray(array));
-        int[] array2 = {1, 2, 3, -1, 8, 3, 1, 4, 1, 2, 1, -7, 9, 5};//false
+        //int[] array2 = {1, 2, 3, -1, 8, 3, 1, 4, 1, 2, 1, -7, 9, 5};//false
         //System.out.println("Test №2 "+checkArray(array2));
     }
 
