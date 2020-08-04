@@ -1,9 +1,9 @@
 package lesson02;
 
-import lesson02.entity.CPrgrammer;
-import lesson02.entity.Employee;
-import lesson02.entity.Manager;
+import lesson02.entity.*;
 import lesson02.repository.DBMock;
+
+import java.lang.management.PlatformManagedObject;
 
 /**
  * JavaAdvanced
@@ -12,6 +12,19 @@ import lesson02.repository.DBMock;
  */
 public class Main {
     public static void main(String[] args) {
+        Manager m1=new Manager("m1", 100.0, 100);
+        Manager m2=new Manager("m2", 1001.0, 101);
+        ProgrammManager pm1 =new ProgrammManager("m2", 1001.0);
+
+        ManageAble[] emp = {m1, m2, pm1};
+        emp[0].manage();
+
+        ManageAble qwe=new Manager("m3", 1001.0, 101); // создали объект manager,
+        //указатель через интерфейс
+        qwe.manage();// только те методы, которые через ManageAble
+
+
+
         EmployeeArray dep01 = new EmployeeArray(DBMock.getEmployees());
         EmployeeArray dep02 = new EmployeeArray(
                 new Employee[]{
