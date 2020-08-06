@@ -1,6 +1,6 @@
 package homeworkAll.homework14Hotel;
 
-import static homeworkAll.homework14Hotel.ArrayBookingList.getBookingByIndex;
+import java.util.Arrays;
 
 /**
  * JavaAdvanced
@@ -43,10 +43,30 @@ public class Main {
 //        bookingList.print();
 
         Booking[] bookings = {b1, b2, b3, b4};
-        System.out.println("booking by index in list"+ArrayBookingList.getBookingByIndex(0, bookings));
+        //System.out.println("booking by index in list"+ArrayBookingList.getBookingByIndex(0, bookings));
 
         Person p1 = new Person("Nick");
-        System.out.println("элемент массива по параметру"+ArrayBookingList.findRoomBooking(bookings, p1));
+        //System.out.println("элемент массива по параметру"+ArrayBookingList.findRoomBooking(bookings, p1));
+
+        // для тестирования метода по сортировке дат
+        Date[] dates = new Date[]{
+                new Date(11, 8, 2018), new Date(31, 6, 2005),
+                new Date(11, 7, 2020), new Date(11, 8, 2020),
+                new Date(17, 8, 2020), new Date(12, 8, 2020),
+        };
+        Arrays.sort(dates);
+        System.out.println(Arrays.toString(dates));
+
+        // тестирование метода, проверяющего корректность интервала checkingDateInterval
+
+        DateInterval dateInterval1=new DateInterval(new Date(11, 8, 2020),
+                new Date(13, 8, 2020));
+        DateInterval dateInterval2=new DateInterval(new Date(11, 9, 2020),
+                new Date(13, 8, 2020));
+        System.out.println("test 1: should be false: "+dateInterval1.checkingDateInterval(dateInterval1));
+        System.out.println("test 1: should be true: "+dateInterval1.checkingDateInterval(dateInterval2));
+
+
 
 
         //System.out.println(ArrayBookingList.getBookingByIndex(0, bookingList));
