@@ -1,4 +1,5 @@
 package Hotel;
+
 import java.util.Random;
 
 /**
@@ -13,25 +14,29 @@ public class DateInterval {
     private int days = 0;
 
     public DateInterval(Date start, Date finish) {
-        this.start = start;
-        this.finish = finish;
+        if (start.compareTo(finish) > 0) {// если дата старта больше финиша, то просто их поменять
+            this.start = finish;
+            this.finish = start;
+        } else {
+            this.start = start;
+            this.finish = finish;
+        }
     }
 
-    public Date getStart() {
-        return start;
+    public static boolean isIntersect(DateInterval interval1, DateInterval interval2) {
+        return !((interval1.getStart().compareTo(interval2.getFinish())>0)||
+                (interval2.getStart().compareTo(interval1.getFinish())>0));
+
     }
 
-    public Date getFinish() {
-        return finish;
-    }
 
     public int getDays() { //для расчета цены за все дни бронирования
         if (days == 0) {
-            for (int i = start.getYear(); i <finish.getYear() ; i++) {
-                days+=Date.getDaysPerYear(i);
+            for (int i = start.getYear(); i < finish.getYear(); i++) {
+                days += Date.getDaysPerYear(i);
             }
-            days-=start.daysFromNewYear();
-            days+=finish.daysFromNewYear();
+            days -= start.daysFromNewYear();
+            days += finish.daysFromNewYear();
         }
         //10.10.2016...03.08.2020  - пример для тестов
 
@@ -48,5 +53,14 @@ public class DateInterval {
     @Override
     public String toString() {
         return "[" + start + ';' + finish + ']';
+    }
+
+
+    public Date getStart() {
+        return start;
+    }
+
+    public Date getFinish() {
+        return finish;
     }
 }

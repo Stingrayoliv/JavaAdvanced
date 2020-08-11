@@ -14,12 +14,15 @@ public class Book implements Comparable<Book>{
     }
 
     @Override
-    public int compareTo(Book o) {
-        return this.author.compareTo(o.author);
+    public int compareTo(Book book) {
+        return this.author.compareTo(book.author);
     }
 
-//    @Override
-//    public int compareTo(Book book) {
-//        return this.author.compareTo(book.author);
-//    }
+    @Override
+    public String toString() {
+        return "Book{" +
+                "author='" + author + '\'' +
+                ", title='" + title + '\'' +
+                '}';
+    }
 }

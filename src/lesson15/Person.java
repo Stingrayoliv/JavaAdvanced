@@ -44,8 +44,6 @@ public class Person implements Comparable<Person> {//для сортировки
 //        }
 //    }
 
-
-
     public String getName() {
         return name;
     }

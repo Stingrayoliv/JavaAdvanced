@@ -4,7 +4,7 @@ package Hotel;
  * JavaAdvanced
  * 31.07.20 19: 23
  */
-public class Date {
+public class Date implements Comparable<Date>{
     private int day;
     private int month;
     private int year;
@@ -82,6 +82,48 @@ public class Date {
     public int getDaysPerYear() {// повторяющийся метод, но без статика
         return getDaysPerYear(this.year);
     }
+
+
+    @Override
+    public int compareTo(Date date) {
+        int checkYears = this.year-date.year;
+        int checkMonth=this.month-date.month;
+        int checkDays=this.day-date.day;
+
+// сравниваем годы, сравниваем месяцы, сравниваем даты
+        if (checkYears !=0){
+            return checkYears;
+        } else {                    //this.year=date.year;// если годы не равны, то сравнивать месяцы
+            if (checkMonth!=0){ // если месяцы не равны, то сравнивай дни
+                return checkMonth;
+            } else {
+                return checkDays;
+            }
+        }
+    }
+
+   // @Override
+//    public int compareTo(Date date) {
+//        int differenceInYears = this.year - date.year;
+//        int differenceInMonths = this.month - date.month;
+//        int differenceInDays = this.day - date.day;
+//        int result = 0;
+//
+//        if (differenceInYears > 0) return 1;
+//        if (differenceInYears < 0) return -1;
+//        if (differenceInYears == 0 && differenceInMonths == 0 && differenceInDays == 0) {
+//            result = 0;
+//        }
+//        if (differenceInYears == 0) {
+//            if (differenceInMonths > 0) return 1;
+//            if (differenceInMonths < 0) return -1;
+//            if (differenceInDays == 0) {
+//                if (differenceInDays > 0) return 1;
+//                if (differenceInDays < 0) return -1;
+//            }
+//        }
+//        return result;
+//    }
 
 
 }

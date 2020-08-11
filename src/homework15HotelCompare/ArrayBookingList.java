@@ -5,10 +5,15 @@ public class ArrayBookingList implements BookingList{
     private int size=0;
     private int capacity=3;
 
+    public ArrayBookingList(Booking[] bookings) {
+        this.bookings = bookings;
+    }
+
     public ArrayBookingList(int capacity) {
         this.capacity = capacity;
         bookings = new Booking[this.capacity];
     }
+
 
     @Override
     public void add(Booking booking) {
@@ -28,6 +33,10 @@ public class ArrayBookingList implements BookingList{
     @Override
     public int size() {
         return size;
+    }
+
+    public Booking[] getBookings() {
+        return bookings;
     }
 
     @Override

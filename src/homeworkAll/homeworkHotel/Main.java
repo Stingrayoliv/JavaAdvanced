@@ -3,10 +3,6 @@ package homeworkAll.homeworkHotel;
 import Hotel.Person;
 import Hotel.StandardRoom;
 
-import static homeworkAll.homeworkHotel.BookingArray.printAll;
-import static homeworkAll.homeworkHotel.Date.*;
-import static homeworkAll.homeworkHotel.DateInterval.*;
-
 /**
  * JavaAdvanced
  * 31.07.20 19: 46

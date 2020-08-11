@@ -1,5 +1,4 @@
 package lesson16;
-
 import java.util.Arrays;
 
 /**
@@ -8,11 +7,10 @@ import java.util.Arrays;
  */
 public class Main {
     public static void main(String[] args) {
-        Book b1 =new Book("Grass", "The Tin Drum");
-        Book b2 =new Book("Death in Venice", "Mann");
-        Book b3 =new Book("The Reader", "Schlink");
+        Book[] books= {new Book("Anna", "The Tin Drum"),
+        new Book("Oleg", "Mann"),
+        new Book("Schlink", "Book4")};
 
-        Book[] books={b1, b2, b3};
 
         Arrays.sort(books);
         System.out.println(Arrays.toString(books));
