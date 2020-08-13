@@ -4,12 +4,12 @@ package Hotel;
  * JavaAdvanced
  * 31.07.20 19: 23
  */
-public class Date implements Comparable<Date>{
+public class MyDate implements Comparable<MyDate>{
     private int day;
     private int month;
     private int year;
 
-    public Date(int day, int month, int year) {
+    public MyDate(int day, int month, int year) {
         this.day = day;
         this.month = month;
         this.year = year;
@@ -85,7 +85,7 @@ public class Date implements Comparable<Date>{
 
 
     @Override
-    public int compareTo(Date date) {
+    public int compareTo(MyDate date) {
         int checkYears = this.year-date.year;
         int checkMonth=this.month-date.month;
         int checkDays=this.day-date.day;

@@ -1,5 +1,8 @@
 package Hotel;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 /**
  * JavaAdvanced
  * 04.08.20 21: 25
@@ -40,5 +43,12 @@ public class ArrayBookingList implements BookingList {
         for (int i = 0; i < size; i++) {
             System.out.println(bookings[i]);
         }
+    }
+
+    @Override
+    public Booking[] getSortedArray(Comparator<Booking> comparator) {
+        Booking[] res = Arrays.copyOf(bookings,bookings.length);
+        Arrays.sort(res,comparator);
+        return res;
     }
 }

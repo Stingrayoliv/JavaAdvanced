@@ -5,7 +5,8 @@ package Hotel;
  * 31.07.20 19: 38
  */
 public class Booking {
-    //private int id;
+    static private int nextId = 0;// статическое поле: 1-ый букинг=1, создали 2-ой, то будет букинг=2
+    private int id;
     private Room room;
     private Person person;
     private DateInterval dateInterval;
@@ -14,6 +15,8 @@ public class Booking {
         this.room = room;
         this.person = person;
         this.dateInterval = dateInterval;
+        this.id=++nextId; //когда мы вызываем создание букинга, то увеличивается значения ИД
+        // ++nextId - сначала прибавим, потом сохраним
     }
 
     public Room getRoom() {
@@ -34,8 +37,8 @@ public class Booking {
 
     @Override
     public String toString() {
-        return "Booking: " + room +
+        return "(" + id + ")" + "Booking: " + room +
                 ", person=" + person + " " + dateInterval + "\n\tprice for " + this.dateInterval.getDays() +
-                " days is " + getPrice()+ " Euro";
+                " days is " + getPrice() + " Euro";
     }
 }

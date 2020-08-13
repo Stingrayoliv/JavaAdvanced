@@ -7,13 +7,13 @@ import java.util.Random;
  * 31.07.20 19: 34
  */
 public class DateInterval {
-    private Date start;
-    private Date finish;
+    private MyDate start;
+    private MyDate finish;
     private static Random rnd = new Random(System.currentTimeMillis());// специальный object для random
     // чтобы разное количество дней генерится
     private int days = 0;
 
-    public DateInterval(Date start, Date finish) {
+    public DateInterval(MyDate start, MyDate finish) {
         if (start.compareTo(finish) > 0) {// если дата старта больше финиша, то просто их поменять
             this.start = finish;
             this.finish = start;
@@ -33,7 +33,7 @@ public class DateInterval {
     public int getDays() { //для расчета цены за все дни бронирования
         if (days == 0) {
             for (int i = start.getYear(); i < finish.getYear(); i++) {
-                days += Date.getDaysPerYear(i);
+                days += MyDate.getDaysPerYear(i);
             }
             days -= start.daysFromNewYear();
             days += finish.daysFromNewYear();
@@ -56,11 +56,11 @@ public class DateInterval {
     }
 
 
-    public Date getStart() {
+    public MyDate getStart() {
         return start;
     }
 
-    public Date getFinish() {
+    public MyDate getFinish() {
         return finish;
     }
 }
