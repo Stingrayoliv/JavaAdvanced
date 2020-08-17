@@ -32,27 +32,37 @@ public class Main {
                 new Person("Nick2"),
                 new DateInterval(new MyDate(11, 8, 2020), new MyDate(13, 8, 2020))
         );
+        Booking b5 = new Booking(
+                new SuiteRoom("4", 2),
+                new Person("Nick26"),
+                new DateInterval(new MyDate(11, 8, 2020), new MyDate(13, 8, 2020))
+        );
 
         BookingList bookingList = new ArrayBookingList(2);
         bookingList.add(b4);
         bookingList.add(b2);
         bookingList.add(b3);
         bookingList.add(b1);
+        //System.out.println(bookingList.findIndexOfObject(b3));
+        //System.out.println(bookingList.findIndexOfObject(b5));
+        bookingList.remove(b3);
         bookingList.print();
-        System.out.println("-----------------------");
+        //System.out.println("-----------------------");
 
-        Booking[] bookings = bookingList.getSortedArray(new BookingComparatorByName());
-        bookingList.print();
-        System.out.println("-----------------------");
-       // перезаписываем нулевой элемент
-        bookings[0]=new Booking(
-                new SuiteRoom("4", 2),
-                new Person("QWE"),
-                new DateInterval(new MyDate(11, 9, 2020), new MyDate(13, 9, 2020)));
 
-        bookingList.print();
-        System.out.println("-----------------------");
-        System.out.println(Arrays.toString(bookings));
+//        Booking[] bookings = bookingList.getSortedArray(new BookingComparatorByName());
+//        bookingList.print();
+//        System.out.println("-----------------------");
+//       // перезаписываем нулевой элемент
+//        bookings[0]=new Booking(
+//                new SuiteRoom("4", 2),
+//                new Person("QWE"),
+//                new DateInterval(new MyDate(11, 9, 2020), new MyDate(13, 9, 2020)));
+//
+//        bookingList.print();
+//        System.out.println("-----------------------");
+//        System.out.println(Arrays.toString(bookings));
+
 
 //        System.out.println(b1);
 //        System.out.println(b2);

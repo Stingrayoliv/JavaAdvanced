@@ -12,4 +12,10 @@ public interface BookingList {
     void  print();
 
     Booking[] getSortedArray(Comparator<Booking> comparator);
+
+    Booking getByIndex(int i);
+
+    int findIndexOfObject(Booking booking);
+
+    Booking[] remove(Booking booking);
 }
