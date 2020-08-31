@@ -1,4 +1,4 @@
-package Hotel;
+package homeworkAll.homeworkBookingAndArrayList;
 
 import java.util.Random;
 

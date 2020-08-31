@@ -18,7 +18,7 @@ public class Main {
         list.add("qstr6");
         System.out.println(list);
 
-        // если начинается на qstr, то удалить элемент (вариант через for)
+        // если начинается на qstr, то удалить элемент (вариант через for)/ не работает верно
 //        for (int i = 0; i < list.size(); i++) {
 //            if (list.get(i).startsWith("q")) {
 //                list.remove(i);
@@ -28,7 +28,7 @@ public class Main {
 //        System.out.println("---------remove--------");
 //        System.out.println(list);
 
-        // если начинается на qstr, то удалить элемент (вариант через foreach)
+        // если начинается на qstr, то удалить элемент (вариант через foreach), не работае правильно
 //        for (String s : list) {
 //            if (s.startsWith("q")) {
 //                list.remove(s);

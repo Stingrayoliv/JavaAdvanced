@@ -1,5 +1,9 @@
 package lesson2101TaskArrayActionAddCondition;
 
+import lesson2101TaskArrayActionAddCondition.action.ReverseStringAction;
+import lesson2101TaskArrayActionAddCondition.condition.LengthCondition;
+import lesson2101TaskArrayActionAddCondition.action.ToUpperCaseAction;
+
 /**
  * JavaAdvanced
  * 17.08.20 20: 40
@@ -28,5 +32,15 @@ public class Main {
                         new LengthCondition(1));
         stringArrayHandler3.stringsHandle();
         System.out.println(stringArrayHandler3.toString());
+
+        ActionAndConditionExample actAndCond=new ActionAndConditionExample();
+        StringArrayHandler stringArrayHandler5=
+                new StringArrayHandler(strings,
+                        actAndCond,
+                        actAndCond);
+        stringArrayHandler5.stringsHandle();
+        System.out.println(stringArrayHandler5.toString());
     }
+
+
 }

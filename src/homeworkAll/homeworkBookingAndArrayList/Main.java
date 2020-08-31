@@ -1,5 +1,6 @@
-package Hotel;
+package homeworkAll.homeworkBookingAndArrayList;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -38,15 +39,15 @@ public class Main {
                 new DateInterval(new MyDate(11, 8, 2020), new MyDate(13, 8, 2020))
         );
 
-        BookingList bookingList = new ArrayBookingList(2);
-        bookingList.add(b4);
-        bookingList.add(b2);
-        bookingList.add(b3);
-        bookingList.add(b1);
+//        BookingList bookingList = new ArrayBookingList(2);
+//        bookingList.add(b4);
+//        bookingList.add(b2);
+//        bookingList.add(b3);
+//        bookingList.add(b1);
         //System.out.println(bookingList.findIndexOfObject(b3));
         //System.out.println(bookingList.findIndexOfObject(b5));
-        bookingList.remove(b3);
-        bookingList.print();
+//        bookingList.remove(b3);
+//        bookingList.print();
         //System.out.println("-----------------------");
 
 
@@ -66,5 +67,21 @@ public class Main {
 
 //        System.out.println(b1);
 //        System.out.println(b2);
+        //-----------------------------------
+        ArrayList<Booking> list =  new ArrayList<>();
+        BookingList bookingList=new ArrayListBooking(list);
+        bookingList.add(b1);
+        bookingList.add(b4);
+        bookingList.add(b3);
+        bookingList.add(b2);
+        //System.out.println(list);
+
+        //bookingList.remove(b1);
+        bookingList.print();
+        System.out.println(bookingList.findIndexOfObject(b2));
+
+        System.out.println(Arrays.toString(bookingList.getSortedArray(new BookingComparatorByName())));
+
+
     }
 }

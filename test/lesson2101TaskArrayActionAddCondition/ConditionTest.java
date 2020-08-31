@@ -1,4 +1,6 @@
 package lesson2101TaskArrayActionAddCondition;
+import lesson2101TaskArrayActionAddCondition.condition.LengthMoreThanFourCondition;
+import lesson2101TaskArrayActionAddCondition.condition.Condition;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

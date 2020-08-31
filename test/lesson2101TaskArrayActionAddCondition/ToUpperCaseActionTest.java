@@ -1,5 +1,7 @@
 package lesson2101TaskArrayActionAddCondition;
 
+import lesson2101TaskArrayActionAddCondition.action.Action;
+import lesson2101TaskArrayActionAddCondition.action.ToUpperCaseAction;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,6 +1,9 @@
 package lesson2101TaskArrayActionAddCondition;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import lesson2101TaskArrayActionAddCondition.action.Action;
+import lesson2101TaskArrayActionAddCondition.action.ReverseStringAction;
 import org.junit.jupiter.api.Test;
 
 

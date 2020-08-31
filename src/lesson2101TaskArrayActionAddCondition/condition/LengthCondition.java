@@ -1,6 +1,6 @@
-package lesson2101TaskArrayActionAddCondition.action;
+package lesson2101TaskArrayActionAddCondition.condition;
 
-import lesson2101TaskArrayActionAddCondition.Condition;
+import lesson2101TaskArrayActionAddCondition.condition.Condition;
 
 /**
  * JavaAdvanced

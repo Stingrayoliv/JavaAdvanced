@@ -1,5 +1,8 @@
 package lesson2101TaskArrayActionAddCondition;
 
+import lesson2101TaskArrayActionAddCondition.action.Action;
+import lesson2101TaskArrayActionAddCondition.condition.Condition;
+
 import java.util.Arrays;
 
 /**
