@@ -1,5 +1,7 @@
 package lesson2101TaskArrayActionAddCondition;
 
+import lesson2101TaskArrayActionAddCondition.action.Action;
+
 /**
  * JavaAdvanced
  * 17.08.20 21: 23
