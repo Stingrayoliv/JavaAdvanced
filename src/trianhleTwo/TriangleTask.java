@@ -1,3 +1,5 @@
+package trianhleTwo;
+
 /**
  * FirstProject
  * 02.08.20 16: 24

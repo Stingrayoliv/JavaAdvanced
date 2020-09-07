@@ -1,4 +1,4 @@
-package homework15HotelCompare;
+package homeworkAll.homework15HotelCompare;
 
 public class SuiteRoom extends Room {
     private final double priceCoefficient=1.3;

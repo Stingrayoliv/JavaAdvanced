@@ -25,7 +25,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "lesson20200832TaskListPersonAndEmail.Main.Person{" +
                 "surname='" + surname + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", secondName='" + secondName + '\'' +

@@ -51,6 +51,6 @@ public class Main {
         people.add(new Person("Jack3"));
 
         Person person =new Person("Jack2");
-        System.out.println(people.indexOf(person)); // в Person реализовать equals. без него не найдет
+        System.out.println(people.indexOf(person)); // в lesson20200832TaskListPersonAndEmail.Main.Person реализовать equals. без него не найдет
     }
 }

@@ -4,7 +4,7 @@ package lesson15;
  * JavaAdvanced
  * 05.08.20 19: 55
  */
-public class Person implements Comparable<Person> {//для сортировки добавляем implements Comparable<Person> +метод compareTo
+public class Person implements Comparable<Person> {//для сортировки добавляем implements Comparable<lesson20200832TaskListPersonAndEmail.Main.Person> +метод compareTo
     private String name;
     private int age;
 
@@ -13,11 +13,11 @@ public class Person implements Comparable<Person> {//для сортировки
         this.age = age;
     }
 // метод сравнения двух строк по имени
-//    public int compareTo(Person person){
+//    public int compareTo(lesson20200832TaskListPersonAndEmail.Main.Person person){
 //        return this.name.compareTo(person.name);
 //    }
 
-    //    public int compareTo(Person person) {// вариант сравнения по возрасту (по инту)
+    //    public int compareTo(lesson20200832TaskListPersonAndEmail.Main.Person person) {// вариант сравнения по возрасту (по инту)
 //        if (this.age > person.age) {
 //            return 1;
 //        }
@@ -27,7 +27,7 @@ public class Person implements Comparable<Person> {//для сортировки
 //            return 0;
 //        }
 //    }
-//    public int compareTo(Person person) {//второй вариант сравнения по возрасту (по инту)
+//    public int compareTo(lesson20200832TaskListPersonAndEmail.Main.Person person) {//второй вариант сравнения по возрасту (по инту)
 //        return this.age - person.age;
 //    }
 
@@ -35,7 +35,7 @@ public class Person implements Comparable<Person> {//для сортировки
         int nameComparing = this.name.compareTo(person.name);
         return  (nameComparing==0)?this.age-person.age:nameComparing;
     }
-//    public int compareTo(Person person) {// // если имена совпадают, то сортируем по возрасту. если не совпали - то по имени
+//    public int compareTo(lesson20200832TaskListPersonAndEmail.Main.Person person) {// // если имена совпадают, то сортируем по возрасту. если не совпали - то по имени
     // вариант более длинной записи
 //        if (this.name.compareTo(person.name)==0) {
 //            return this.age - person.age;
@@ -54,7 +54,7 @@ public class Person implements Comparable<Person> {//для сортировки
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "lesson20200832TaskListPersonAndEmail.Main.Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

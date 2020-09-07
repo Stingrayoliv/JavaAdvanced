@@ -1,4 +1,4 @@
-package homework15HotelCompare;
+package homeworkAll.homework15HotelCompare;
 
 public class Person {
     private String name;

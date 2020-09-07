@@ -19,7 +19,7 @@ public class Main {
         Card[] cards = new Card[array.length];
         for (int i = 0; i < array.length; i++) {
             String[] rez = array[i].split(" "); //split содержит регулярное выражение
-            //new Person(rez[1]);
+            //new lesson20200832TaskListPersonAndEmail.Main.Person(rez[1]);
             switch (getCardType(rez[0])) {
                 case 1:
                     cards[i] = new Master(new Person(rez[1]), rez[0]);
@@ -30,7 +30,7 @@ public class Main {
                 default:
                     System.out.println("error");
             }
-            //cards[i] = new Card(new Person(rez[1]), rez[0]);
+            //cards[i] = new Card(new lesson20200832TaskListPersonAndEmail.Main.Person(rez[1]), rez[0]);
         }
         return cards;
     }

@@ -57,7 +57,7 @@ public class Main {
 //       // перезаписываем нулевой элемент
 //        bookings[0]=new Booking(
 //                new SuiteRoom("4", 2),
-//                new Person("QWE"),
+//                new lesson20200832TaskListPersonAndEmail.Main.Person("QWE"),
 //                new DateInterval(new MyDate(11, 9, 2020), new MyDate(13, 9, 2020)));
 //
 //        bookingList.print();

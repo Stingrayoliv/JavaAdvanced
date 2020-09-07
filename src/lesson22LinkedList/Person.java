@@ -13,7 +13,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person: " + name;
+        return "lesson20200832TaskListPersonAndEmail.Main.Person: " + name;
     }
 
     @Override
