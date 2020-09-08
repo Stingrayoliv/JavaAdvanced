@@ -124,6 +124,4 @@ public class MyDate implements Comparable<MyDate>{
 //        }
 //        return result;
 //    }
-
-
 }
