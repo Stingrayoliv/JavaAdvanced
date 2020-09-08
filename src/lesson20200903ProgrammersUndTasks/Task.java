@@ -79,6 +79,6 @@ public class Task implements Comparable<Task> {
 
     @Override
     public int compareTo(Task task) {
-        return (getPrioritiesInNumbers(this.priority)-getPrioritiesInNumbers(task.priority));
+        return (getPrioritiesInNumbers(task.priority)-getPrioritiesInNumbers(this.priority));
     }
 }
