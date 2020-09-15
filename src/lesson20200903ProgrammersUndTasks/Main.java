@@ -2,6 +2,7 @@ package lesson20200903ProgrammersUndTasks;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +21,13 @@ public class Main {
         tasks.add(task5);
         tasks.add(task6);
 
-        System.out.println(TaskHandler.taskQueue(tasks));
+        Queue<Task> queue = TaskHandler.taskQueue(tasks);
+        Task iTask = queue.poll(); // печатать через queue, после распечатки элемент удалится
+        while (iTask!=null){
+            System.out.println(iTask);
+            iTask=queue.poll();
+        }
+        //System.out.println(queue);
+
     }
 }

@@ -67,18 +67,13 @@ public class Task implements Comparable<Task> {
         return result;
     }
 
-    public int getPrioritiesInNumbers(Priority priority) {
-        if (priority.equals(Priority.HIGH)) {
-            return 3;
-        } else if (priority.equals(Priority.NORMAL)) {
-                return 2;
-        } else {
-                return 1;
-        }
-    }
+//    public int getPrioritiesInNumbers(Priority priority) {
+//       return priority.getPrioritiesInNumbers(priority);
+//    }
 
     @Override
     public int compareTo(Task task) {
-        return (getPrioritiesInNumbers(task.priority)-getPrioritiesInNumbers(this.priority));
+        //return (getPrioritiesInNumbers(task.priority)-getPrioritiesInNumbers(this.priority));
+        return this.priority.compareTo(task.priority);
     }
 }
