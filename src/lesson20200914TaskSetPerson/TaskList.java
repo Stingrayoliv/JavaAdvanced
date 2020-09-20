@@ -14,17 +14,18 @@ public class TaskList {
         listOfString.add("Olga");
         listOfString.add("Lora");
 
-        System.out.println("to show elements without repeating"+getUniqueString(listOfString).toString());
+        System.out.println("to show elements without repeating" + getUniqueString(listOfString).toString());
 
         List<Person> personList = Arrays.asList(
-              new Person("David"),
-              new Person("Olga"),
-              new Person("Oleg"),
-              new Person("Olga"),
-              new Person("Anna"),
-              new Person("Lora")
+                new Person("David"),
+                new Person("David"),
+                new Person("Olga"),
+                new Person("Oleg"),
+                new Person("Olga"),
+                new Person("Anna"),
+                new Person("Lora")
         );
-        System.out.println("to show elements without repeating"+getUniquePerson(personList));
+        System.out.println("to show elements without repeating" + getUniquePerson(personList));
     }
 
     public static List<String> getUniqueString(List<String> list) {
@@ -33,8 +34,8 @@ public class TaskList {
         return newList;
     }
 
-    public static List<Person> getUniquePerson(List<Person>list){
-        if (list== null) return new ArrayList<Person>();
+    public static List<Person> getUniquePerson(List<Person> list) {
+        if (list == null) return new ArrayList<Person>();
         List<Person> newList = new ArrayList<>(new HashSet<Person>(list)); // HashSet не гарантирует порядок элементов,
         return newList;
     }

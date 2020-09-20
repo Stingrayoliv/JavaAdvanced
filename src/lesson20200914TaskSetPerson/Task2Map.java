@@ -16,6 +16,7 @@ public class Task2Map {
 
         List<Person> personList = Arrays.asList(
                 new Person("David"),
+                new Person("David"),
                 new Person("Olga"),
                 new Person("Oleg"),
                 new Person("Olga"),
@@ -23,7 +24,6 @@ public class Task2Map {
                 new Person("Lora")
         );
         System.out.println(getMapWithKeyPersonAndValueBoolean(personList));
-
 
     }
 
@@ -44,6 +44,7 @@ public class Task2Map {
         return result;
     }
 
+    // Задача сделать Map<Person, Boolean>. Изначально передаем список List<Person> list, имена - ключи.
     public static Map<Person, Boolean> getMapWithKeyPersonAndValueBoolean(List<Person> list) {
         Map<Person, Boolean> result = new HashMap<>();
         if (list==null) return result;
