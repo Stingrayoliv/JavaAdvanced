@@ -1,4 +1,4 @@
-package lesson20200925WeekDay;
+package moduleSecond.lesson20200925WeekDay;
 
 /**
  * JavaAdvanced
@@ -7,7 +7,7 @@ package lesson20200925WeekDay;
 
 
 public class InputMock implements NumberInput {
-    int nextNumber;
+    //int nextNumber;
     @Override
     public int getNextNumber() {
         return 2;

@@ -1,7 +1,4 @@
-package homeworkPersonAndAddressCheck;
-
-import java.util.ArrayList;
-import java.util.List;
+package homeworkAll.homeworkPersonAndAddressCheck;
 
 /**
  * JavaAdvanced

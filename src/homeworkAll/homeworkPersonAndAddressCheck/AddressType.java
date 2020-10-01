@@ -1,4 +1,4 @@
-package homeworkPersonAndAddressCheck;
+package homeworkAll.homeworkPersonAndAddressCheck;
 
 public enum AddressType {
     EMAIL,

@@ -1,4 +1,4 @@
-package lesson20200925WeekDay;
+package moduleSecond.lesson20200925WeekDay;
 
 import org.junit.jupiter.api.Test;
 

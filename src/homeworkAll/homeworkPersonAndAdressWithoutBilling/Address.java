@@ -1,10 +1,5 @@
 package homeworkAll.homeworkPersonAndAdressWithoutBilling;
 
-import homeworkPersonAndAddressCheck.PersonAddress;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Address {
     private String address;
     private AddressType type;

@@ -1,4 +1,4 @@
-package homeworkPersonAndAddressCheck;
+package homeworkAll.homeworkPersonAndAddressCheck;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,9 +1,6 @@
-package homeworkPersonAndAddressCheck;
-
-import org.omg.PortableServer.LIFESPAN_POLICY_ID;
+package homeworkAll.homeworkPersonAndAddressCheck;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**

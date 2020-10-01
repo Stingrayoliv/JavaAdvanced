@@ -1,4 +1,4 @@
-package homeworkPersonAndAddressCheck;
+package homeworkAll.homeworkPersonAndAddressCheck;
 
 public class PersonAddress {
     private String address;
