@@ -1,4 +1,4 @@
-package moduleSecond.lesson08102020;
+package moduleSecond.lesson08102020Lamda;
 @FunctionalInterface
 public interface DemoInterface {
     String SOME_STRING="Hello"; //  можно инициализировать только так (глобальная переменная подразумевает

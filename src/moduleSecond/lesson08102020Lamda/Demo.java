@@ -1,10 +1,11 @@
-package moduleSecond.lesson08102020;
+package moduleSecond.lesson08102020Lamda;
 
 import java.util.Comparator;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+
 
 public class Demo {
     public static void main(String[] args) {

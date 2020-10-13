@@ -1,4 +1,4 @@
-package moduleSecond.lesson08102020;
+package moduleSecond.lesson08102020Lamda;
 
 public class DemoImpl implements DemoInterface {
 

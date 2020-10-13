@@ -1,2 +1,4 @@
-package moduleSecond.lesson08102020;public class Person {
+package moduleSecond.lesson08102020Lamda;
+
+public class Person {
 }
