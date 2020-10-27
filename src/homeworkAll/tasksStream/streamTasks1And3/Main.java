@@ -1,4 +1,4 @@
-package homeworkAll.tasksStream.streamTask1And3;
+package homeworkAll.tasksStream.streamTasks1And3;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,13 +6,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toMap;
-
-/**
- * JavaAdvanced
- * 15.10.20 00 23
- */
-
-
 public class Main {
     public static void main(String[] args) {
         Person p1 = new Person("Lora", 18, new Address("Rosenheimer", 32));

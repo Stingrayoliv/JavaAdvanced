@@ -1,11 +1,10 @@
-package homeworkAll.tasksStream.streamTask4;
+package homeworkAll.tasksStream.streamTasks4And5;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.function.UnaryOperator;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * JavaAdvanced
@@ -27,5 +26,20 @@ public class Main {
                 groupingBy(BankAccount::getOwner));
         accountsByPerson
                 .forEach((p, IBAN) -> System.out.format("person %s: %s\n", p, IBAN));
+
+        //5. Написать функцию, которая для списка счетов, возвращает список IBANNs, где в каждом IBANN символы после
+        // 3-го и до конца заменены звездочками.
+        Stream<String> result = bankAccounts.stream().map(BankAccount::getIBAN).
+                map(Main::makeNewStringWithStars);
+        System.out.println("Task 5: ");
+        result.forEach(System.out::println);
+    }
+
+    public static String makeNewStringWithStars(String s) {
+        String result = "";
+        for (int i = 3; i < s.length(); i++) {
+            result += "*";
+        }
+        return s.substring(0, 3).concat(result);
     }
 }

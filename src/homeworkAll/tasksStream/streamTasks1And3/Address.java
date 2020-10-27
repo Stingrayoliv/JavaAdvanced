@@ -1,4 +1,4 @@
-package homeworkAll.tasksStream.streamTask1And3;
+package homeworkAll.tasksStream.streamTasks1And3;
 
 /**
  * JavaAdvanced
