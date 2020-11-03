@@ -74,5 +74,4 @@ public class Demo {
     public static String getString(String input) {
         return input;
     }
-
 }
