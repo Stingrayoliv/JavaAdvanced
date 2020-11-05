@@ -1,4 +1,4 @@
-package moduleSecond.lesson29102020;
+package moduleSecond.lesson29102020ReadingSCVFile;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
