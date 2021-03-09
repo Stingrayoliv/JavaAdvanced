@@ -8,6 +8,7 @@ import java.util.*;
 public class Task2 {
     public static boolean checkCondition(List<Integer> list, int n) {
         Deque<Integer> deque = new ArrayDeque(list);
+
         while (!deque.isEmpty()) {
             if ((n > 0 && n % deque.pollFirst() == 0 && deque.contains(n / deque.pollFirst()))) {
                 return true;
@@ -17,5 +18,9 @@ public class Task2 {
             }
         }
         return false;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(checkCondition(Arrays.asList(1, 5, 8, 20), 15));
     }
 }

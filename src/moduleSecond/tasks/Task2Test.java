@@ -19,6 +19,6 @@ class Task2Test {
 
     @Test
     public void checkCondition_listIntegerAndNumber25_false() {
-        assertFalse(Task2.checkCondition(Arrays.asList(1, 5, 8, 20), 25));
+        assertFalse(Task2.checkCondition(Arrays.asList(5, 5, 8, 4), 25));
     }
 }
